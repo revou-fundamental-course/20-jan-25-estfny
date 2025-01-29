@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
+        <div class="judul">
         <h1>BMI Calculator</h1>
+        <br>
         <h3>An ideal body weight is everyone's dream. Not only it enhance your appearance,
             but also indicates a healthy body condition.
             How about you? Let's calculate it now with the BMI Calculator.
         </h3>
+        <br>
+        <br>
+        </div>
 
         <form id="bmiform">
             <div class="form-group">
@@ -39,26 +45,31 @@
                 <input type="number" id="height" placeholder="Input Height" required>
             </div>
 
-            <div class="form-group">
+            <div class="button-group">
             <button type="submit" id="calculation">Calculate</button>
             <button type="reset" id="resetbutton">Reset</button>
             </div>
 
         </form>
 
+        <br><br>
         <h3>Benefits of the Feature</h3>
         <ol type="1">
         <li>Calculating body weight</li>
         <li>Determining whether body weight is ideal or not</li>
         <li>Preparing a weight loss program</li>
         </ol>
+        <br>
 
         <p>This calculator is for adults only (pregnant or breastfeeding women should not rely on BMI calculations). No action should be taken based on the result other than consulting a qualified professional, such as a doctor.</p>
+        <br>
 
         <p>The calculator gives you an overview of your weight comparison using the Body Mass Index (BMI), which is calculated by dividing your weight (in kilograms) by the square of your height (in meters): BMI = Kg/M².</p>
+        <br>
 
         <div id="result" class="result">
             <!-- buat hasil hitung BMI-->
+             
         </div>
 
         <div id="explanation" class="explanation">
@@ -70,10 +81,12 @@
             <button type="regist" id="registration">Online Nutritionist Registration</button>
         </div>
 
+        <br>
+
         <p>BMI does not fully represent a comprehensive health diagnosis or disease risk. Further consultation is needed to address concerns and risks related to your weight.</p>
 
         <div id="disease" class="disease">
-            <p>Some diseases related to obesity:</p>
+            <h3>Some diseases related to obesity:</h3>
             <ul type="none">
             <li>Diabetes</li>
             <li>Hypertension</li>
@@ -81,19 +94,22 @@
             <li>Osteoarthritis</li>
             </ul>
 
+            <div id="tombol" class="tombol">
             <button type="consult" id="consultation">Doctor Consultation via App</button>
             <button type="regist" id="registration">Register Online Now</button>
+            </div>
         </div>
     </div>
 </body>
 <footer>
     <div style="text-align: center; padding: 20px;">
         <p>Download our app:</p>
+        <br>
         <a href="https://play.google.com/store" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Play_Store_badge_EN.svg" alt="Google Play Store" style="width: 150px; margin-right: 10px;">
+          <img src="images/google.png" alt="Google Play Store" style="width: 150px; margin-right: 10px;">
         </a>
         <a href="https://www.apple.com/app-store/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Apple_Logo.svg" alt="App Store" style="width: 150px;">
+          <img src="images/apple.png" alt="App Store" style="width: 136px; margin-bottom: 10px;">
         </a>
       </div>    
 </footer>
